@@ -3,27 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up form</title>
 </head>
-<body>
-      <nav aria-label="breadcrumbs" id="top">
+<body id="top">
+    <header>
+        <nav aria-label="Global navigation">
         <a href="index.html">Home</a>
-    </nav>
+            <a href="form.html">
+        </nav>
     <h2>Sign up</h2>
-    <p>
-        Create an account to get started on your learning journey
+        <hr>
+        <!--Brand logo-->
+    <h1><strong>Alt___<br>School</strong></h1>
+        
+    </header>
+   
+<!---Main content--->      
+<main>
+    <!-- Sign up/ Sign in toggle-->
+    <p aria-label="Sign in or Sign up">
+        <a href="#sign up</a> |<a href="#sign in"> Sign in</a>
     </p>
-    <label>
-        Email <p><input type="text"></p>
-        First name <p><input type="text"></p>
-        last name <p><input type="text"> </p>
-        phone number <p><input type="text"></p>
-        password<p><input type="text"></p>
-    </label>
-
+        <section aria-labelledby="signup-heading">
+            <h1 id="signup-heading">
+                Sign Up   
+            </h1>
+            <p>
+                 Create an account to get started on your learning journey
+            </p>
+            <aside role="note">
+                <p><strong>
+                    Important:
+                </strong>
+                    Your name will appear on your certificate exactly as entered
+                    
+                </p>
+            </aside>
+            <form action="#" mathod="post">
+            <legend>Create your account</legend>
+            <label>
+                Email <p><input type="email" id="email" name="email" placeholder="johndoe@example.com"
+                             autocomplete="email" required></p>
+                First name <p><input type="text" id="first-name" name="firstName" placeholder="John"
+                                  autocomplete="given-name" required></p>
+                Last name <p><input type="text" id="last-name" name="lastName" placeholder="Doe"
+                                 autocomple= "family-name" required> </p>
+                
+                Phone number <p><input type="tel" id="phone" name="phone" placeholder="+1234567890"
+                                    autocomplete="tel" required></p>
+                Password<p><input type="password" id="password" name="password" placeholder=********></p>
+                
+            </label>
+            <!-- T and C-->
+            <p>By clicking Create account, I agree to the <a href="#terms"> Terms of use</a> and acknowledge that I have read the 
+                <a href="#privacy"> Privacy Policy</a>.</p>
+            <p>
+                <button type="submit">
+                    Create account
+                    
+                </button>
+            </p>
+                <p>------------------OR-----------------</p>
+                <p>
+                    <button type="button">
+                        Login with Google
+                    </button>
+                </p>
+            </form>
+  
+        </section>
     
-    <p>By clicking Create account, I agree to the Terms of use and acknowledge that I have read the privacy Policy.</p>
-    <button>Create account</button>
+</main>
   
     
 </body>
