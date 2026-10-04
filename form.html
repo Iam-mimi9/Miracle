@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="submitForm(event)">
+        <fieldset class="border rounded">
+            <label>
+                Enter your name: <input type="text" name="Student">
+            </label>
+            <legend>Who is the tutor's favorite student ever?</legend>
+            <ul>
+                <li class="list-none">
+                    <label>
+                        <input class="radio" type="radio" value="Stanley Azi">
+
+                    </label>
+
+                </li>
+                <li class="list-none">
+                    <label>
+                      <input class="radio" type="radio" value="Damilolo">  
+                    </label>
+
+                </li>
+            </ul>
+            <button class="btn"> Pick your favorite student</button>
+        </fieldset>
+
+    </form>
+    <p> Selected: <span id="selected"></span></p>
+    <style>
+        li{ list-style: none;}
+        ul { display: flex; padding: 0;}
+        
+    </style>
+</body>
+</html>
